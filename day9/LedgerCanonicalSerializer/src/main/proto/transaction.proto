@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.banking.ledger.proto";
+option java_outer_classname = "TransactionProto";
+
+message Transaction {
+  string transaction_id = 1;
+  string account_id = 2;
+  int64 amount_minor_units = 3; // e.g., cents
+  string currency = 4; // e.g., USD
+  int64 timestamp_epoch_millis = 5;
+  string description = 6;
+  TransactionType type = 7;
+  repeated string related_transaction_ids = 8; // For linking
+}
+
+enum TransactionType {
+  DEBIT = 0;
+  CREDIT = 1;
+  TRANSFER = 2;
+  FEE = 3;
+}
