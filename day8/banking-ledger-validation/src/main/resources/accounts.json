@@ -1,0 +1,32 @@
+{
+  "ACC-100001": {
+    "accountId": "ACC-100001",
+    "balance": 1500.00,
+    "currency": "USD",
+    "active": true
+  },
+  "ACC-100002": {
+    "accountId": "ACC-100002",
+    "balance": 500.00,
+    "currency": "USD",
+    "active": true
+  },
+  "ACC-100003": {
+    "accountId": "ACC-100003",
+    "balance": 10000.00,
+    "currency": "EUR",
+    "active": true
+  },
+  "ACC-100004": {
+    "accountId": "ACC-100004",
+    "balance": 0.00,
+    "currency": "USD",
+    "active": true
+  },
+  "ACC-100005": {
+    "accountId": "ACC-100005",
+    "balance": 5000.00,
+    "currency": "USD",
+    "active": false
+  }
+}
